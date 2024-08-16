@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+
+</head>
+<body>
+    <script src="script.js"></script>
+    <form>
+        <fieldset>
+          <legend>Feedback form</legend>
+          <div>
+            <label for="fname">First name: </label>
+            <input id="fname" name="fname" type="text" required />
+          </div>
+          <div>
+            <label for="lname">Last name: </label>
+            <input id="lname" name="lname" type="text" required />
+          </div>
+          <div>
+            <label for="email">
+              Email address (include if you want a response):
+            </label>
+            <input id="email" name="email" type="email" />
+          </div>
+          <div><button>Submit</button></div>
+        </fieldset>
+      </form>
+      <form action="">
+        <fieldset>
+            <legend>Choose your favourite fruit</legend>
+            <p>
+                <label>
+                    <input type="radio" name="fruit" value="cherry">
+                    ::before </input>
+                </label>
+            </p>
+        </fieldset>
+      </form>
+      <form>
+        <p>Required fields are labeled with "required".</p>
+        <div>
+            <label for="fname">First name: </label>
+            <input id="fname" name="fname" type="text" required />
+            <span></span>
+        </div>
+          
+      </form>
+      <p>
+
+      </p>
+      <form action="">
+        <div>
+            <label for="fname">First name: </label>
+            <input id="fname" name="fname" type="text" required />
+            <span></span>
+        </div>
+          
+      </form>
+     <p>
+        <p>
+            <p>
+
+            </p>
+        </p>
+     </p>
+     <form action="">
+        <div>
+            <label for="age">Age (must be 12+): </label>
+            <input id="age" name="age" type="number" min="12" max="120" required />
+            <span></span>
+        </div>
+          
+     </form>
+     <p>
+
+     </p>
+     <form>
+        <fieldset id="shipping">
+          <legend>Shipping address</legend>
+          <div>
+            <label for="name1">Name: </label>
+            <input id="name1" name="name1" type="text" required />
+          </div>
+          <div>
+            <label for="address1">Address: </label>
+            <input id="address1" name="address1" type="text" required />
+          </div>
+          <div>
+            <label for="pcode1">Zip/postal code: </label>
+            <input id="pcode1" name="pcode1" type="text" required />
+          </div>
+        </fieldset>
+        <fieldset id="billing">
+          <legend>Billing address</legend>
+          <div>
+            <label for="billing-checkbox">Same as shipping address:</label>
+            <input type="checkbox" id="billing-checkbox" checked />
+          </div>
+          <div>
+            <label for="name" class="billing-label disabled-label">Name: </label>
+            <input id="name" name="name" type="text" disabled required />
+          </div>
+          <div>
+            <label for="address2" class="billing-label disabled-label">
+              Address:
+            </label>
+            <input id="address2" name="address2" type="text" disabled required />
+          </div>
+          <div>
+            <label for="pcode2" class="billing-label disabled-label">
+              Zip/postal code:
+            </label>
+            <input id="pcode2" name="pcode2" type="text" disabled required />
+          </div>
+        </fieldset>
+      
+        <div><button>Submit</button></div>
+      </form>
+      
+
+</body>
+</html>

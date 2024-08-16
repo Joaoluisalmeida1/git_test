@@ -17,6 +17,29 @@
     });
 
   </script>
+  <style>
+    input,
+    textarea,
+    select,
+    button {
+      width: 150px;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    fieldset {
+      position: relative;
+    }
+
+    legend {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+
+  </style>
     <form>
         <fieldset>
           <legend>Fruit juice size</legend>
@@ -150,10 +173,87 @@
             step="100"
             value="250000" />
           <output class="price-output" for="price"></output>
-
+          
         </p>
         <input type="datetime-local" name="datetime" id="datetime" />
+        <input type="month" name="month" id="month" />
+        <input type="time" name="time" id="time" />
+        <input type="week" name="week" id="week" />
+        <label for="myDate">When are you available this summer?</label>
+        <input
+          type="date"
+          name="myDate"
+          min="2013-06-01"
+          max="2013-08-31"
+          step="7"
+          id="myDate" />
+        <input type="color" name="color" id="color" />
+        <p>
+          <textarea cols="30" rows="8"></textarea>
+          <select id="simple" name="simple">
+            <option>Banana</option>
+            <option selected>Cherry</option>
+            <option>Lemon</option>
+          </select>
+          <select id="groups" name="groups">
+            <optgroup label="fruits">
+              <option>Banana</option>
+              <option selected>Cherry</option>
+              <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+            
+          </select>
+          
+          
+        </p>
+        <p>
+          <select id="simple" name="simple">
+            <option value="banana">Big, beautiful yellow banana</option>
+            <option value="cherry">Succulent, juicy cherry</option>
+            <option value="lemon">Sharp, powerful lemon</option>
+          </select>
+          
+        </p>
+        <p>
+          <select id="multi" name="multi" multiple size="2">
+            <optgroup label="fruits">
+              <option>Banana</option>
+              <option selected>Cherry</option>
+              <option>Lemon</option>
+            </optgroup>
+            <optgroup label="vegetables">
+              <option>Carrot</option>
+              <option>Eggplant</option>
+              <option>Potato</option>
+            </optgroup>
+          </select>
+          
+        </p>
+        <p>
+          <label for="myFruit">What's your favorite fruit?</label>
+          <input type="text" name="myFruit" id="myFruit" list="mySuggestion" />
+          <datalist id="mySuggestion">
+            <option>Apple</option>
+            <option>Banana</option>
+            <option>Blackberry</option>
+            <option>Blueberry</option>
+            <option>Lemon</option>
+            <option>Lychee</option>
+            <option>Peach</option>
+            <option>Pear</option>
+          </datalist>
 
+        </p>
+        <p>
+          <meter min="0" max="100" value="75" low="33" high="66" optimum="0">75</meter>
+          <progress max="100" value="75">75/100</progress>
+
+        </p>
         <!-- <input type="hidden" id="timestamp" name="timestamp" value="1286795410"> invisible timestamp of when order is placed -->
       </form>
 </body>
